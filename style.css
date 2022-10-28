@@ -5,7 +5,8 @@
     padding: 0;
     list-style: none;
 }
-:root{
+:root
+{
   --color-primary: #191d2b;
   --color-secondary: #27AE60;
   --color-white: #FFFFFF;
@@ -22,24 +23,28 @@
 }
 
 
-.sidebar{
+.sidebar
+{
     background-color: var(--color-primary);
     width: 100vw;
-    left: 25%;
-       
+    position: fixed;
 }
-.sidebar nav{
+
+.sidebar nav
+{
     display: flex;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    margin-top: 3%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0%;
     position: relative;
     gap: 45px;
-    align-items: center;
     left: 50%;
     padding: 9px;
 }
-.sidebar nav a{
+.sidebar nav a
+{
     display: inline-block;
     text-decoration: none;
     text-decoration-style: none;
@@ -47,16 +52,55 @@
     transition-duration: 0.4s;
 }
 
-.sidebar nav a:hover {
+.sidebar nav a:hover
+{
     color: red;
 }
 
-.Contactbtn {
-        transition-duration: 0.4s;
+.Contactbtn
+{
+    transition-duration: 0.4s;
+    padding: 3px  5px;
+    font-size: 15px;
+    font-weight:bold;
 }
 
 .Contactbtn:hover {
-        background-color: #4CAF50; /* Green */
-        color: white;
-      }
+    background-color: var(--color-grey-5);
+    color:red;
+    
+}
+
+
+#home {
+    background-image: url('images/homeBackground.jpg');
+    height: 100vh;
+    background-size: cover;  
+    background-repeat: no-repeat;
+    padding: 15% 0px 0px 45%;
+    align-items: center;
+    color: var(--color-white);  
+}
+
+.homeImage{
+    padding: 0px 0px 0px 50px;
+    height: 50px;
+
+}
+#home h1 {
+    font-size: 70px;
+}
+
+#home p {
+    font-size: 40px;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+}
+.aboutme h1{
+    font-size: 100px;
+    padding: 0px 0px 0px 0px;
+}
 
